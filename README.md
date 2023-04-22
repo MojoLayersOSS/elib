@@ -20,6 +20,21 @@ it, simply add the following line to your Podfile:
 pod 'elib'
 ```
 
+### Usage
+
+```
+#import <elib/elib.h>
+
+NSString *p12File = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"p12.p12"];
+NSString *provisionFile = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"provision.mobileprovision"];
+NSString *password = @"AppleP12.com";
+
+NSString *ipaFile = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"ipa.ipa"];
+
+NSString *signedIPAPath = [ELib resignIPAFileAtPath:ipaFile withP12AtPath:p12File andMobileProvisionAtPath:provisionFile andPassword:password];
+    
+```
+
 ## Author
 
 Mojo Layers, LLC - @mojolayersoss
