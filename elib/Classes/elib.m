@@ -186,7 +186,7 @@
         outputPath = NSTemporaryDirectory();
     }
     
-    NSString *ipaOutputPath = [outputPath stringByAppendingString:[ipaName stringByAppendingString:@".ipa"]];
+    NSString *ipaOutputPath = [outputPath stringByAppendingString:ipaName];
     NSString *bundleDirectory = [bundlePath stringByAppendingString:@"Bundle/"];
     
     if (![SSZipArchive createZipFileAtPath:ipaOutputPath withContentsOfDirectory:bundleDirectory]) {
@@ -220,7 +220,7 @@
     
     [self repackageIPAFileWithBundleAtPath:@"" andIPAName:ipaName andOutputPath:@""];
     
-    if (![self doesFileExist:[NSTemporaryDirectory() stringByAppendingString:[ipaName stringByAppendingString:@".ipa"]]]) {
+    if (![self doesFileExist:[NSTemporaryDirectory() stringByAppendingString:ipaName]]) {
         NSLog(@"[ELib] [PFFR-0009] [❌] Failed to find the newly created IPA File. Throwing Exception.");
         [NSException raise:@"Unable to find new IPA File" format:@"The new IPA File was not able to be found."];
         return @"Failed";
@@ -228,7 +228,7 @@
     
     NSLog(@"[ELib] [✅] Successfully IPA with P12 and Mobileprovision and is stored in the TMP Directory for this App.");
     
-    return [NSTemporaryDirectory() stringByAppendingString:[ipaName stringByAppendingString:@".ipa"]];
+    return [NSTemporaryDirectory() stringByAppendingString:ipaName];
 }
 
 + (NSString *)resignIPAFileAtPath:(NSString *)ipaPath withP12AtPath:(NSString *)p12Path andMobileProvisionAtPath:(NSString *)MPPath andPassword:(NSString *)pw  andOutputPath:(NSString *)outputPath {
@@ -245,7 +245,7 @@
     
     [self repackageIPAFileWithBundleAtPath:outputPath andIPAName:ipaName andOutputPath:outputPath];
     
-    if (![self doesFileExist:[outputPath stringByAppendingString:[ipaName stringByAppendingString:@".ipa"]]]) {
+    if (![self doesFileExist:[outputPath stringByAppendingString:ipaName]]) {
         NSLog(@"[ELib] [PFFR-0009] [❌] Failed to find the newly created IPA File. Throwing Exception.");
         [NSException raise:@"Unable to find new IPA File" format:@"The new IPA File was not able to be found."];
         return @"Failed";
@@ -253,7 +253,7 @@
     
     NSLog(@"[ELib] [✅] Successfully IPA with P12 and Mobileprovision and is stored in the provided output directory.");
     
-    return [outputPath stringByAppendingString:[ipaName stringByAppendingString:@".ipa"]];
+    return [outputPath stringByAppendingString:ipaName];
 }
 // Uses Provided Path
 
