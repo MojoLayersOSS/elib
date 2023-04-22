@@ -25,11 +25,11 @@ pod 'elib', :git => 'https://github.com/MojoLayersOSS/elib.git'
 ```
 #import <elib/elib.h>
 
-NSString *p12File = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"p12.p12"];
-NSString *provisionFile = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"provision.mobileprovision"];
-NSString *password = @"AppleP12.com";
+NSString *p12File = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"file.p12"];
+NSString *provisionFile = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"file.mobileprovision"];
+NSString *password = @"Password123";
 
-NSString *ipaFile = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"ipa.ipa"];
+NSString *ipaFile = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"file.ipa"];
 
 NSString *signedIPAPath = [ELib resignIPAFileAtPath:ipaFile withP12AtPath:p12File andMobileProvisionAtPath:provisionFile andPassword:password];
     
