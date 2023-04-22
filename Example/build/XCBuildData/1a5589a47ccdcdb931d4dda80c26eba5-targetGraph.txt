@@ -1,0 +1,17 @@
+Target dependency graph (7 targets)
+OpenSSL-Universal in Pods, no dependencies
+SSZipArchive in Pods, no dependencies
+UnzipKit-UnzipKitResources in Pods, no dependencies
+UnzipKit in Pods, depends on:
+UnzipKit-UnzipKitResources in Pods (explicit)
+elib in Pods, depends on:
+OpenSSL-Universal in Pods (explicit)
+SSZipArchive in Pods (explicit)
+UnzipKit in Pods (explicit)
+Pods-elib_Example in Pods, depends on:
+OpenSSL-Universal in Pods (explicit)
+SSZipArchive in Pods (explicit)
+UnzipKit in Pods (explicit)
+elib in Pods (explicit)
+Pods-elib_Tests in Pods, depends on:
+Pods-elib_Example in Pods (explicit)

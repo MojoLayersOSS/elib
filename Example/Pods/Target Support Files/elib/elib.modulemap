@@ -1,0 +1,6 @@
+framework module elib {
+  umbrella header "elib-umbrella.h"
+
+  export *
+  module * { export * }
+}

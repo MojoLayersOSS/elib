@@ -1,0 +1,63 @@
+{
+  "_buildCommand2" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : false,
+    "targets" : null
+  },
+  "buildCommand" : "build",
+  "configuredTargets" : [
+    {
+      "guid" : "bfdfe7dc352907fc980b868725387e9870a150a630b0d3653757854b577a74fa"
+    },
+    {
+      "guid" : "bfdfe7dc352907fc980b868725387e9884a5d7d2fc5d1cbeaf56414a38f4e428"
+    },
+    {
+      "guid" : "bfdfe7dc352907fc980b868725387e9860be0f258aead03b17544cced935f83d"
+    },
+    {
+      "guid" : "bfdfe7dc352907fc980b868725387e986f184aaa317f5985a6d0a56b4d2e0c13"
+    },
+    {
+      "guid" : "bfdfe7dc352907fc980b868725387e9827f1bdf881d2128e7e0c131d50e443ae"
+    },
+    {
+      "guid" : "bfdfe7dc352907fc980b868725387e98c780ee3ccea9505667c68e0003186161"
+    },
+    {
+      "guid" : "bfdfe7dc352907fc980b868725387e988452f47b074a4e68a1990c931568dfae"
+    }
+  ],
+  "containerPath" : "/Users/joe/Library/Mobile Documents/com~apple~CloudDocs/Mojo Layers/Projects/github/elib/Example/Pods/Pods.xcodeproj",
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "",
+      "buildProductsPath" : "",
+      "derivedDataPath" : "/Users/joe/Library/Developer/Xcode/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/joe/Library/Developer/Xcode/DerivedData/Pods-ajjazwwfasfevsawirimjspswfbk/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/joe/Library/Developer/Xcode/DerivedData/Pods-ajjazwwfasfevsawirimjspswfbk/Index.noindex/PrecompiledHeaders",
+      "pchPath" : ""
+    },
+    "configurationName" : "Release",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO"
+        }
+      }
+    }
+  },
+  "qos" : "default",
+  "schemeCommand" : "launch",
+  "schemeCommand2" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : true,
+  "useImplicitDependencies" : false,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : false
+}

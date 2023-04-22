@@ -1,0 +1,33 @@
+{
+  "name": "elib",
+  "version": "0.1.0",
+  "summary": "A short description of elib.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/MojoLayersOSS/elib",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "mojolayesross": "github@mojolayers.com"
+  },
+  "source": {
+    "git": "https://github.com/MojoLayersOSS/elib.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "elib/Classes/**/*",
+  "dependencies": {
+    "OpenSSL-Universal": [
+
+    ],
+    "UnzipKit": [
+
+    ],
+    "SSZipArchive": [
+      "2.4.2"
+    ]
+  }
+}

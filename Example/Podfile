@@ -1,0 +1,17 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'elib_Example' do
+  
+  pod 'OpenSSL-Universal'
+  pod 'UnzipKit'
+  pod 'SSZipArchive', '2.4.2'
+  pod 'elib', :path => '../'
+
+  target 'elib_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

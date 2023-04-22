@@ -1,0 +1,36 @@
+PODS:
+  - elib (0.1.0):
+    - OpenSSL-Universal
+    - SSZipArchive (= 2.4.2)
+    - UnzipKit
+  - OpenSSL-Universal (1.1.1900)
+  - SSZipArchive (2.4.2)
+  - UnzipKit (1.9):
+    - UnzipKit/minizip-lib (= 1.9)
+  - UnzipKit/minizip-lib (1.9)
+
+DEPENDENCIES:
+  - elib (from `../`)
+  - OpenSSL-Universal
+  - SSZipArchive (= 2.4.2)
+  - UnzipKit
+
+SPEC REPOS:
+  trunk:
+    - OpenSSL-Universal
+    - SSZipArchive
+    - UnzipKit
+
+EXTERNAL SOURCES:
+  elib:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  elib: ef6407bca68df255fc8b7dc40908f7de00e83960
+  OpenSSL-Universal: 84efb8a29841f2764ac5403e0c4119a28b713346
+  SSZipArchive: e7b4f3d9e780c2acc1764cd88fbf2de28f26e5b2
+  UnzipKit: 40e2c20a4928f0cfde5eb05a1108c08ee3e16bdc
+
+PODFILE CHECKSUM: 38f0cf535fa819348081fc98ea91d31477e5efe0
+
+COCOAPODS: 1.12.1
