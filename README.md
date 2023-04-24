@@ -22,6 +22,12 @@ pod 'elib', :git => 'https://github.com/MojoLayersOSS/elib.git'
 
 ### Usage
 
+After adding elib to you Podfile - run `pod install`
+
+## Important
+
+Make sure you go to the `Pods` Project, and then the `elib` target -> `Build Settings` -> `Compile Sources As` and set that to `Objective-C++`
+
 ```
 #import <elib/elib.h>
 
